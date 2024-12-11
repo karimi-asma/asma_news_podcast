@@ -46,5 +46,5 @@ A multi-agent AI project that automates the creation of tech-focused podcast epi
 Feel free to fork the repository, create branches for new features, and submit pull requests.
 
 ## License
-
+This project is licensed under the MIT License.
 
