@@ -20,8 +20,8 @@ A multi-agent AI project that automates the creation of tech-focused podcast epi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/asma-news-podcast-in-tech.git
-   cd asma-news-podcast-in-tech
+   git clone https://github.com/karimi-asma/asma_news_podcast.git
+   cd asma-news-podcast
    ```
 
 2. Install dependencies:
