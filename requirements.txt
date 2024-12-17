@@ -1,10 +1,15 @@
 beautifulsoup4==4.12.3
 nltk==3.9.1
-numpy==2.2.0
+numpy
 pyttsx3==2.98
 regex==2024.11.6
 requests==2.32.3
 scikit-learn==1.5.2
 scipy==1.14.1
 tqdm==4.67.1
-transformers==4.47.0
+google-cloud-aiplatform
+vertexai
+python-dotenv
+google-auth
+
+
