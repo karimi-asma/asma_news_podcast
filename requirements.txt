@@ -12,6 +12,7 @@ vertexai
 python-dotenv
 google-auth
 gtts
+google-cloud-texttospeech
 
 
 
