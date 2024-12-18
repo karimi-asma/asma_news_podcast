@@ -1,50 +1,60 @@
-# Asma News Podcast in Tech
+Asma News Podcast in Tech
+A multi-agent AI project that automates the creation of tech-focused podcast episodes. This project leverages Agentic AI to streamline the end-to-end workflow, including news scraping, summarization, script generation, and text-to-speech conversion.
 
-A multi-agent AI project that automates the creation of tech-focused podcast episodes. This project leverages Agentic AI for content creation, including news scraping, summarization, script generation, and text-to-speech conversion.
+Features
+News Scraping: Automatically fetches the latest tech news articles from specified websites.
+Summarization: Condenses lengthy articles into concise and informative summaries.
+Script Generation: Creates podcast-ready scripts with engaging content, incorporating technical details and a natural flow.
+Text-to-Speech Conversion: Converts podcast scripts into high-quality audio files using Google Cloud Text-to-Speech.
+Cloud Deployment: Supports deployment on Google Cloud Platform (GCP) and AWS, including integration with Vertex AI for script generation.
+Requirements
+Python: Version 3.8 or higher.
+Libraries:
+requests
+beautifulsoup4
+transformers
+torch
+google-cloud-texttospeech
+gtts
+dotenv
+vertexai
+Cloud Requirements:
+Google Cloud Text-to-Speech API enabled.
+Google Vertex AI enabled for script generation.
+Installation
+1. Clone the Repository:
 
-## Features
+git clone https://github.com/karimi-asma/asma_news_podcast.git
+cd asma-news-podcast
+2. Install Dependencies:
+Install the required Python libraries:
 
-- **News Scraping**: Fetches the latest tech news articles.
-- **Summarization**: Condenses lengthy articles into concise summaries.
-- **Script Generation**: Creates podcast-ready scripts.
-- **Text-to-Speech**: Converts scripts into audio files.
-- **Cloud Deployment**: Plans for deployment using AWS infrastructure.
+pip install -r requirements.txt
 
-## Requirements
+Usage
+1. Run Agents Individually:
+Execute each agent to perform specific tasks:
 
-- Python 3.8+
-- Libraries: `requests`,`beautiful soup`, `transformers`, `torch`, `boto3`
-- Hugging Face Transformers
+News Scraping:
+python src/ScraperFinal.py
+Script Generation and Text-to-Speech:
 
-## Installation
+python src/ScriptAudio.py
+2. Pipeline Integration:
+Combine all agents into a cohesive pipeline to automate the entire podcast creation workflow:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/karimi-asma/asma_news_podcast.git
-   cd asma-news-podcast
-   ```
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+python pipeline/main_pipeline.py
+Cloud Deployment
+Google Cloud Platform (GCP):
+Use Vertex AI for script generation.
+Use Google Cloud Text-to-Speech for high-quality audio conversion.
+Future Plans for AWS:
+Automate the pipeline using AWS Lambda, S3, and Step Functions.
+Incorporate cost-effective deployment options using Bedrock.
 
-## Usage
+Contribution
+We welcome contributions! Feel free to fork the repository, create feature branches, and submit pull requests.
 
-1. **Run Agents Individually**:
-   Execute each agent script to perform specific tasks like news scraping or summarization.
-   ```bash
-   python news_scraper.py
-   python summarizer.py
-   ```
-
-2. **Integrate Agents**:
-   Combine agents into a pipeline to automate the podcast creation workflow.
-
-## Contribution
-
-Feel free to fork the repository, create branches for new features, and submit pull requests.
-
-## License
-This project is licensed under the MIT License.
-
+License
+This project is licensed under the MIT License
