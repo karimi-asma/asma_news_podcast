@@ -59,6 +59,7 @@ python src/SUmmaryFinal.py
 
 Script Generation and Text-to-Speech:
 python src/ScriptAudio.py
+---
 
-License
+## License
 This project is licensed under the MIT License
