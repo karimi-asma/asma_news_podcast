@@ -46,11 +46,12 @@ cd asma-news-podcast
 Install the required Python libraries:
 
 pip install -r requirements.txt
+```
 
 ## Usage
-### 1. Run Agents Individually:
+Run Agents Individually:
 Execute each agent to perform specific tasks:
-
+```
 News Scraping:
 python src/ScraperFinal.py
 
@@ -59,7 +60,6 @@ python src/SUmmaryFinal.py
 
 Script Generation and Text-to-Speech:
 python src/ScriptAudio.py
----
-
+```
 ## License
 This project is licensed under the MIT License
